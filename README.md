@@ -40,7 +40,7 @@ STORAGE_KEY=your_storage_key
 ```
 
 ### Contributing
-Contributions are welcome! Please read our Contributing Guidelines for details on our code of conduct and the process for submitting pull requests.
+Contributions are welcome!
 
 ### License
 This project is licensed under the MIT License
