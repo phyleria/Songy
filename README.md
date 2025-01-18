@@ -5,20 +5,28 @@ Turn your personal stories into custom-crafted songs! SongStory is a web platfor
 
 Clone the repository
 
-```git clone https://github.com/yourusername/songy.git```
+```env
+git clone https://github.com/yourusername/songy.git
+
+```
 
 Install dependencies
 
-```cd songstory```
-```npm install  # or yarn install```
+```env
+cd songstory
 
-Set up environment variables
+```
+```env
+npm install  # or yarn install
 
-```cp .env.example .env```
+```
 
 Run the development server
 
-```npm run dev  # or yarn dev```
+```env
+npm run dev  # or yarn dev
+
+```
 
 ### Environment Variables
 
