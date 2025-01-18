@@ -13,7 +13,7 @@ git clone https://github.com/yourusername/songy.git
 Install dependencies
 
 ```env
-cd songstory
+cd songy
 
 ```
 ```env
