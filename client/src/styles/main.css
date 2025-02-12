@@ -1,0 +1,302 @@
+.home-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.hero-section {
+  display: flex;
+  background: #F8F9FE;  /* Lighter background color */
+  border-radius: 24px;
+  overflow: hidden;
+  gap: 2rem;
+  padding: 0.6rem;
+}
+
+.content-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-group h1 {
+  font-size: 4rem;  /* Larger font size */
+  font-weight: 800;  /* Bolder weight */
+  margin: 0;
+  line-height: 1.1;
+}
+
+.blue-text {
+  color: #4A90E2;
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 0.25rem 0;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #666;
+  margin: 2rem 0;
+  max-width: 90%;
+}
+
+/* Update button styles */
+.cta-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #4A90E2;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+}
+
+/* Update image side */
+.image-side {
+  flex: 1;
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+/* Update process overlay */
+.process-overlay {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 16px;
+}
+
+.process-overlay h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+}
+
+.process-overlay p {
+  color: #666;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.5;
+}
+
+.view-process-button {
+  background-color: #4A90E2;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: transparent;
+}
+
+.logo a {
+  color: #4A90E2;
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.quote-button {
+  background-color: #4A90E2;
+  color: white !important;
+  padding: 0.75rem 1.5rem;
+  border-radius: 35px;
+  font-weight: 600 !important;
+}
+
+.quote-button:hover {
+  background-color: #357abd;
+}
+.home-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero-section {
+  display: flex;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  border-radius: 24px;
+  overflow: hidden;
+  /* margin-top: 10px; */
+}
+
+.content-side {
+  flex: 1;
+  padding: 4rem;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.title-group {
+  margin-bottom: 2rem;
+}
+
+.title-group h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.blue-text {
+  color: #4A90E2;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #4A90E2;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #357abd;
+}
+
+.image-side {
+  flex: 1;
+  position: relative;
+}
+
+.hero-image {
+  position: relative;
+  height: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.process-overlay {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.process-overlay h3 {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.process-overlay p {
+  margin: 0 0 1rem 0;
+  color: #666;
+}
+
+.view-process-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #4A90E2;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover .arrow-icon,
+.view-process-button:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+  }
+  
+  .content-side,
+  .image-side {
+    padding: 2rem;
+  }
+  
+  .hero-image {
+    min-height: 400px;
+  }
+}
