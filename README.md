@@ -1,5 +1,5 @@
 ## Songy 🎵
-Turn your personal stories into custom-crafted songs! SongStory is a web platform that allows users to submit their stories and receive personalized songs created specifically for them.
+Turn your personal stories into custom-crafted songs! Songy is a web platform that allows users to submit their stories and receive personalized songs created specifically for them.
 
 ## Getting Started
 
