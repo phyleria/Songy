@@ -1,21 +1,37 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../styles/main.css';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import "../styles/main.css";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  // Update isMobile when the window resizes
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <nav className="navbar">
       <div className="logo">
         <Link to="/">Songy</Link>
       </div>
-      <div className="nav-links">
-        <Link to="/about">About Us</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/information">Information</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/quote" className="quote-button">Request a Quote</Link>
+      <div className={`nav-links ${isOpen ? "open" : ""}`}>
+        <Link to="/about" onClick={() => setIsOpen(false)}>About Me</Link>
+        <Link to="/services" onClick={() => setIsOpen(false)}>Request a Song</Link>
+        <Link to="/information" onClick={() => setIsOpen(false)}>How it Works</Link>
+        <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
+        <Link to="/quote" className="quote-button" onClick={() => setIsOpen(false)}>Pricing</Link>
       </div>
+      
+      {/* Only render the hamburger on mobile */}
+      {isMobile && (
+        <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+          ☰
+        </div>
+      )}
     </nav>
   );
 };
