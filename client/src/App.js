@@ -5,6 +5,10 @@ import Home from './components/Home';
 import About from './components/About';
 import Request from './components/Request';
 import How from './components/How';
+import Contact from './components/Contact';
+import Pricing from './components/Pricing';
+
+
 
 
 
@@ -18,8 +22,8 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Request" element={<Request />} />
           <Route path="/How" element={<How />} />
-          <Route path="/contact" element={<div>Contact Page</div>} />
-          <Route path="/quote" element={<div>Quote Page</div>} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Pricing" element={<Pricing />} />
         </Routes>
       </div>
     </Router>

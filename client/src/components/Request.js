@@ -135,7 +135,7 @@ const Request = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="deadline">Desired Completion Date (Optional)</label>
+              <label htmlFor="deadline">Desired Completion Date</label>
               <input 
                 type="date" 
                 id="deadline" 
