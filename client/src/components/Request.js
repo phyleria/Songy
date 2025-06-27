@@ -36,43 +36,43 @@ const Request = () => {
             <h1>TELL ME YOUR</h1>
             <div className="blue-text">STORY</div>
           </div>
-          <p className="hero-description">
-            Share your unique story, occasion, or feeling, and I'll transform it into a personalized song. 
+          <p className="request-description">
+            Share your unique story, occasion, or feeling, and I'll transform it into a personalized song.
             I'm here to help you create something truly meaningful.
           </p>
 
           <form onSubmit={handleSubmit} className="request-form">
             <div className="form-group">
               <label htmlFor="name">Your Name</label>
-              <input 
-                type="text" 
-                id="name" 
-                name="name" 
-                value={formData.name} 
-                onChange={handleChange} 
-                required 
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
               />
             </div>
 
             <div className="form-group">
               <label htmlFor="email">Email Address</label>
-              <input 
-                type="email" 
-                id="email" 
-                name="email" 
-                value={formData.email} 
-                onChange={handleChange} 
-                required 
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
               />
             </div>
 
             <div className="form-group">
               <label htmlFor="songType">Type of Song</label>
-              <select 
-                id="songType" 
-                name="songType" 
-                value={formData.songType} 
-                onChange={handleChange} 
+              <select
+                id="songType"
+                name="songType"
+                value={formData.songType}
+                onChange={handleChange}
                 required
               >
                 <option value="">Select an option</option>
@@ -87,69 +87,67 @@ const Request = () => {
 
             <div className="form-group">
               <label htmlFor="occasion">Occasion (if any)</label>
-              <input 
-                type="text" 
-                id="occasion" 
-                name="occasion" 
+              <input
+                type="text"
+                id="occasion"
+                name="occasion"
                 placeholder="Birthday, Anniversary, Wedding, etc."
-                value={formData.occasion} 
-                onChange={handleChange} 
+                value={formData.occasion}
+                onChange={handleChange}
               />
             </div>
 
             <div className="form-group full-width">
               <label htmlFor="story">Your Story</label>
-              <textarea 
-                id="story" 
-                name="story" 
-                rows="5" 
+              <textarea
+                id="story"
+                name="story"
+                rows="5"
                 placeholder="Tell me about the story, person, or feelings you want to express in this song..."
-                value={formData.story} 
-                onChange={handleChange} 
+                value={formData.story}
+                onChange={handleChange}
                 required
               ></textarea>
             </div>
 
             <div className="form-group">
               <label htmlFor="mood">Desired Mood/Feeling</label>
-              <input 
-                type="text" 
-                id="mood" 
-                name="mood" 
+              <input
+                type="text"
+                id="mood"
+                name="mood"
                 placeholder="Happy, Nostalgic, Romantic, etc."
-                value={formData.mood} 
-                onChange={handleChange} 
+                value={formData.mood}
+                onChange={handleChange}
               />
             </div>
 
             <div className="form-group">
               <label htmlFor="references">Song References (Optional)</label>
-              <input 
-                type="text" 
-                id="references" 
-                name="references" 
+              <input
+                type="text"
+                id="references"
+                name="references"
                 placeholder="Any songs that inspire the style you want"
-                value={formData.references} 
-                onChange={handleChange} 
+                value={formData.references}
+                onChange={handleChange}
               />
             </div>
 
             <div className="form-group">
               <label htmlFor="deadline">Desired Completion Date</label>
-              <input 
-                type="date" 
-                id="deadline" 
-                name="deadline" 
-                value={formData.deadline} 
-                onChange={handleChange} 
+              <input
+                type="date"
+                id="deadline"
+                name="deadline"
+                value={formData.deadline}
+                onChange={handleChange}
               />
             </div>
 
             <button type="submit" className="cta-button">
-              Submit My Song Request
-              <svg className="arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
+              Submit Song Request
+
             </button>
           </form>
         </div>
@@ -157,14 +155,15 @@ const Request = () => {
         <div className="image-side">
           <div className="hero-image">
             <img src={`${process.env.PUBLIC_URL}/request.avif`} alt="Musical inspiration" />
+
           </div>
           <div className="process-overlay">
             <h3>How It Works</h3>
             <p>After receiving your request and details, I’ll craft your custom song within 2 weeks and email you the final recording.</p>
-            <button className="view-process-button">
+            <button className="view-process-button" onClick={() => window.location.href = '/process'}>
               Learn More
               <svg className="arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </button>
           </div>

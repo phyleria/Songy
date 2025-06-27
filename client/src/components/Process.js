@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import '../styles/main.css';
 
-const How = () => {
+const Process = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
   const toggleFaq = (index) => {
@@ -34,13 +33,6 @@ const How = () => {
 
   return (
     <div className="how-container">
-      {/* Hero Section */}
-      <section className="how-hero">
-        <div className="how-hero-content">
-          <h1>How I Create Your <span className="accent">Perfect Song</span></h1>
-          <p>A simple 5-step process to transform your story into music</p>
-        </div>
-      </section>
 
       {/* Process Section */}
       <section className="process-section">
@@ -84,7 +76,7 @@ const How = () => {
           <div className="faq-list">
             {faqItems.map((item, index) => (
               <div key={index} className={`faq-item ${openFaq === index ? 'active' : ''}`}>
-                <button 
+                <button
                   className="faq-question"
                   onClick={() => toggleFaq(index)}
                 >
@@ -101,15 +93,9 @@ const How = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="cta-section">
-        <div className="cta-content">
-          <h2>Ready to Create Your Song?</h2>
-          <p>Let's transform your story into a unique musical creation</p>
-          <Link to="/request" className="cta-button">Share Your Story</Link>
-        </div>
-      </section>
+
     </div>
   );
 };
 
-export default How;
+export default Process;

@@ -30,6 +30,10 @@ body, html {
   font-weight: 800;  /* Bolder weight */
   margin: 0;
   line-height: 1.1;
+  margin-bottom: 1.2rem;
+}
+.request-description{
+   margin-top: 0; 
 }
 
 .blue-text {
@@ -754,7 +758,7 @@ body, html {
 
 /* Process Section */
 .process-section {
-  padding: 80px 20px;
+  padding: 60px 20px;
   background: #f9f9f9;
 }
 
@@ -768,7 +772,7 @@ body, html {
 
 .step {
   background: white;
-  padding: 1.5rem;
+  padding: 1.0rem;
   border-radius: 12px;
   box-shadow: 0 2px 20px rgba(0,0,0,0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -792,7 +796,7 @@ body, html {
 }
 
 .step h3 {
-  font-size: 1.75rem;
+  font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 1rem;
   color: #1a1a1a;
@@ -809,6 +813,7 @@ body, html {
 .faq-section {
   padding: 80px 20px;
   background: white;
+
 }
 
 .faq-content {
@@ -822,6 +827,7 @@ body, html {
   text-align: center;
   margin-bottom: 3rem;
   color: #1a1a1a;
+
 }
 
 .faq-list {
@@ -855,6 +861,8 @@ body, html {
   justify-content: space-between;
   align-items: center;
   transition: background-color 0.3s ease;
+    font-family: 'Cormorant Garamond', serif;
+
 }
 
 .faq-question:hover {
