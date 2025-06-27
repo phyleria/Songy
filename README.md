@@ -1,5 +1,5 @@
 ## Songy 🎵
-Turn your personal stories into custom-crafted songs! Songy is a web platform that allows users to submit their stories and receive personalized songs created specifically for them.
+I'm trying something new, a push to get more into songwriting and producing song so this site is my first step in trying.
 
 ## Getting Started
 
