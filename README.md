@@ -1,5 +1,5 @@
 ## Songy 🎵
-I'm trying something new, a push to get more into songwriting and producing music, and this site is a step towards that.
+I'm trying something new, a push to get more into songwriting and producing music, and this site is a step towards that...
 
 ## Getting Started
 
