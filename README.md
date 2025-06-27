@@ -10,17 +10,6 @@ git clone https://github.com/yourusername/songy.git
 
 ```
 
-Install dependencies
-
-```env
-cd songy
-
-```
-```env
-npm install  # or yarn install
-
-```
-
 Run the development server
 
 ```env
