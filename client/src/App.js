@@ -8,13 +8,9 @@ import Process from './components/Process';
 import Contact from './components/Contact';
 import Pricing from './components/Pricing';
 
-
-
-
-
 function App() {
   return (
-    <Router>
+    <Router basename="/Songy">
       <div className="App">
         <Navbar />
         <Routes>

@@ -1,7 +1,10 @@
 import React from 'react';
 import '../styles/main.css';
+import { useNavigate } from 'react-router-dom';
+
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <div className="home-container">
       <div className="hero-section">
@@ -18,7 +21,11 @@ const Home = () => {
               through music.
 
             </p>
-            <button className="cta-button" onClick={() => window.location.href = '/request'}>              <span>Share Your Story with Me</span>
+            <button
+              className="cta-button"
+              onClick={() => navigate('/request')}
+            >
+              <span>Share Your Story with Me</span>
               <svg className="arrow-icon" width="20" height="20" viewBox="0 0 24 20">
                 <path d="M7 14h14M14 7l7 7-7 7" stroke="currentColor" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -31,7 +38,10 @@ const Home = () => {
             <div className="process-overlay">
               <h3>Learn How it Works</h3>
               <p>Check out how easy it is to create a song that tells your story. See the steps to get started!</p>
-              <button className="view-process-button" onClick={() => window.location.href = '/process'}>
+              <button
+                className="view-process-button"
+                onClick={() => navigate('/process')}
+              >
                 View Process
                 <svg className="arrow-icon" width="20" height="20" viewBox="0 0 24 24">
                   <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

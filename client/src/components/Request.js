@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 const Request = () => {
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -27,6 +30,7 @@ const Request = () => {
     // Reset form or show success message
     alert('Thank you! Your song request has been submitted. I will reach out to you shortly.');
   };
+  const navigate = useNavigate();
 
   return (
     <div className="home-container">
@@ -160,7 +164,10 @@ const Request = () => {
           <div className="process-overlay">
             <h3>How It Works</h3>
             <p>After receiving your request and details, I’ll craft your custom song within 2 weeks and email you the final recording.</p>
-            <button className="view-process-button" onClick={() => window.location.href = '/process'}>
+            <button
+              className="view-process-button"
+              onClick={() => navigate('/process')}
+            >
               Learn More
               <svg className="arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
